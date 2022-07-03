@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercado Digital YpeMart</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- Bulma Version 0.9.0-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="../styles/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+</head>
+<body>
+        <!-- START NAV -->
+        <nav class="navbar is-white">
+          <div class="container" style="gap: 70%;">
+              <div class="navbar-brand navMenu">
+                <div class="logo-container">
+                    <a class="navbar-item brand-text logo"
+                        style="
+                        padding: 10px;
+                        min-width: 52px;
+                        min-height: 71px;
+                        margin: 20px;
+                        border-radius: 5px;
+                        background: linear-gradient(to right, var(--cor-principal-50), var(--cor-secundaria-100));"
+                        href="../index.html">
+                        <img src="../images/7537231573_2cdecb5a-5daa-4a90-8d89-83190f565368.png" alt="Logo-YpeMart" style="width: 40px;height: 50px;">
+                    </a>
+                </div>
+                  <div class="navbar-burger burger" data-target="navMenu">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </div>
+              </div>
+              <div id="navMenu" class="navbar-menu">
+                  <div class="navbar-start">
+                      <a class="navbar-item" href="index.html">
+                        Home
+                      </a>
+                      <a class="navbar-item" href="#l">
+                        Contato
+                      </a>
+                      <a class="navbar-item" href="admin.html">
+                        Sobre
+                      </a>
+                    </div>
+              </div>
+
+          </div>
+      </nav>
+      <!-- END NAV -->
+
+      <div class="container">
+          <div class="columns">
+              <div class="column is-9">
+                  <nav class="breadcrumb" aria-label="breadcrumbs">
+                      <ul>
+                          <li class="is-active"><a href="#" aria-current="page">Contatos</a></li>
+                      </ul>
+                  </nav>
+                  <section class="hero is-info welcome is-small">
+                      <div class="hero-body">
+                          <div class="container">
+                              <h1 class="title">
+                                 Sobre Nós
+                              </h1>
+                              <h2 class="subtitle">
+                                  Conheça mais sobre os desenvolvedores do projeto
+                              </h2>
+                          </div>
+                      </div>
+                  </section>
+                  <div class="columns">
+                      <div class="column is-full">
+                          <div class="card events-card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Produtos por quantidade
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <div class="content">
+                                    <canvas id="chartDashboardProdutos" height="300"></canvas>
+                                </div>
+                            </div>
+                              <footer class="card-footer">
+                                <span></span>
+                                <span></span>
+                              </footer>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <script async type="text/javascript" src="../js/bulma.js"></script>
+      <script async type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>
